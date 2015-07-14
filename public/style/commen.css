@@ -1,0 +1,324 @@
+body{
+    background-color: #EEEEEE;
+    font-size: 14px;
+}
+*{
+	padding:0px;
+	margin:0px;
+    font-family: "microsoft yahei",sans-serif;
+}
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.getCenter{
+    margin:0 auto;
+}
+.disappear{
+    display: none;
+}
+.appear{
+    display: block;
+}
+#zidaifenye li{
+    list-style: none;
+    float: left;
+}
+
+
+
+#navBox{
+    width: 100%;
+    background-color: #E34D4D;
+	box-shadow:0 3px 4px #ccc;
+    position: relative;
+    z-index: 100;
+}
+#nav{
+    width: 960px;
+    height: 52px;
+    margin: 0 auto;
+    color: #FFFFFF;
+
+}
+#nav li{
+    display:block;
+	float:left;
+    width: 120px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.atHereColor{
+    background-color: #AF3232;
+}
+.onHoverColor{
+    background-color: #FFFFFF;
+	
+}
+.textColor1{
+    color: #000000;
+}
+.textColor2{
+    color: #FFFFFF;
+}
+.pageBox1{
+
+    width: 120px;
+    padding: 0 30px 10px 0;
+    border-top: solid 1px #D8D8D8;
+    background-color: #FFFFFF;
+    color: #000000;
+    position: relative;
+    z-index: 101;
+}
+.pageBox2{
+    width: 120px;
+    padding-bottom: 10px;
+	border-top:solid 1px #D8D8D8;
+    background-color: #FFFFFF;
+    color: #000000;
+    position: relative;
+    z-index: 101;
+	
+}
+.pageBox1 a,.pageBox2 a{
+    height: 30px;
+    line-height: 30px;
+}
+.pageBox1 a{
+    width: 150px;
+
+}
+.pageBox2 a{
+    width: 120px;
+}
+
+.pageBox1 a:hover,.pageBox2 a:hover{
+    background-color:  #E34D4D;
+}
+/*头部*/
+#banner{
+    width: 960px;
+    height: 110px;
+    overflow: hidden;
+}
+#HUSTIcon{
+    width: 96px;
+    height: 67px;
+    margin-top: 15px;
+    float: left;
+}
+#HUSTName{
+    width: 279px;
+    height: 65px;
+    margin-top: 25px;
+    float: left;
+}
+#HNC{
+    width: 224px;
+    height: 42px;
+}
+#HNE{
+    width: 279px;
+    height: 23px;
+}
+#departmet{
+    width: 200px;
+    padding: 28px 10px;
+    margin-right: 10px;
+    float: right;
+    text-align: right;
+    
+}
+#pC{
+    font-size: 24px;
+    font-family: "adobeheitistd";
+    font-weight: bold;
+}
+#pE{
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: "time news roman";
+    font-weight: bold;
+}
+#EV{
+    margin-top: 4px;
+    font-size: 12px;
+    font-family: "time news roman";
+    font-weight: bold;
+}
+
+
+/*页脚*/
+#footer{
+    width: 100%;
+    clear:both;
+    padding: 25px 0 20px 0;
+    background-color: #535353;
+}
+#footer p{
+        margin: 0 0 8px 0;
+        color: #D2D2D2;
+        font-size: 12px;
+        text-align: center;
+}
+/*边栏*/
+#content{
+    width: 960px;
+    min-height: 690px;
+    background-color: #FFFFFF;
+    clear:both;
+    padding-top: 35px;
+    overflow: hidden;
+}
+.subNav{
+    width: 240px;
+    height: 390px;
+    float: left;
+    margin-left: 50px;
+    background: #EEEEEE;
+}
+.subNav h2{
+    height: 35px;
+    width: 156px;
+    font-size: 18px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+    margin-left: 42px;
+    font-weight:540;
+    border-bottom: 2px solid #535353;
+}
+.menuBox li{
+   font-size: 16px;
+   font-weight: normal;
+  
+   margin-left: 62px;
+   margin-bottom: 20px;
+}
+.sepli{
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+.detail{
+    width: 565px;
+    margin-left: 50px;
+    float: left;
+}
+.location{
+    height: 25px;
+    border-bottom: 1px dashed #000;
+}
+.content_span{
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.detail_content{
+    margin-bottom:30px;
+}
+.detail_content p{
+    text-indent: 2em;
+    line-height: 20px;
+}
+.teacher ul:after{
+    clear: both;
+}
+.teacher ul{
+    list-style: none;
+}
+.teacher .li_div{
+    width: 132px;
+    height: 158px;
+    float: left;
+}
+.teacher li{
+    width: 268px;
+    height: 158px;
+    float: left;
+    margin-top: 40px;
+}
+.teacher li:nth-child(2n){
+    margin-left: 28px;
+}
+.li_div img{
+    width: 132px;
+    height: 158px;
+    border: none;
+}
+.teacher_info{
+    width: 136px;
+    height: 158px;
+    float: left;
+    text-align: center;
+}
+.teacher_info p{
+    width: 130px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 28px;
+}
+.teacher_fenye{
+    clear: both;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+}
+.teacher_fenye *{
+    display: inline;
+}
+.teacher_fenye a{
+    margin: 0 10px;
+}
+
+/*新闻资讯*/
+.news{
+    width: 100%;
+}
+.newsli{
+    overflow: hidden;
+}
+.newsli li{
+   
+    margin-top: 5px;
+    list-style: none;
+    overflow: hidden;
+}
+.newspan1{
+    display: block;
+    width: 400px;
+    overflow: hidden;
+   
+   
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    float: left;
+}
+.newspan2{
+    float: right;
+    color: #ccc;
+}
+.liicon{
+    float: left;
+    width:0;
+    height: 0;
+    background: #000;
+    border: 4px;
+    border-style: solid;
+    margin-right: 5px;
+    margin-top: 6px;
+    border-color: #fff #fff #fff #535353;
+    vertical-align: middle;
+}
+.detail_content{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.detail_content img{
+    max-width: 500px;
+}
