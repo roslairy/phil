@@ -72,17 +72,16 @@
 	overflow:hidden;
 }
 .links1 ul li,.links2 ul li{
+    height:18px;
     padding-top: 10px;
     color: #535353;
     font-weight: 500;
-	height:16px;
     list-style: none;
 	
 }
 .links1 li a{
 	display:block;
-	
-	height:16px;
+	height:18px;
 	white-space:nowrap; 
 	text-overflow:ellipsis;
 	overflow:hidden;
@@ -91,7 +90,7 @@
 .links2 li a{
 	display:block;
 	
-	height:16px;
+	height:18px;
 	white-space:nowrap; 
 	text-overflow:ellipsis;
 	overflow:hidden;

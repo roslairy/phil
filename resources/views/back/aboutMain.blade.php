@@ -10,14 +10,8 @@
             帮助信息
         </div>
         <div class="panel-body">
-            <p>这是由点维开发的哲学系后台管理系统。</p>
-            <p>这么简单好用的后台管理还需要帮助？</p>
-            <p>不会用的人啊！</p>
-            <p>你们都是缺乏信仰！</p>
-            <p>人活着没有信仰，和咸鱼有什么区别！</p>
-        </div>
-        <div class="panel-footer">
-            <a href="http://westudio.us" target="_blank">点击充值信仰</a> &nbsp;&nbsp;&nbsp;<span> &lt; &lt; &lt; - - - &nbsp;&nbsp;&nbsp;然而主页炸了，所以充值并没有什么卵用。</span>
+            <p>本网站由点维工作室开发。</p>
+            <p>如有疑问请联系<a href="http://westudio.us/">我们</a>。</p>
         </div>
     </div>
 </div>
