@@ -21,8 +21,7 @@ class Visit extends Controller {
 		$presses = Article::where('taxonomy', '=', 'xwzx-zxxw')
 			->orderBy('id', 'desc')->paginate(6);
 		$informs = Article::where('taxonomy', '=', 'xwzx-tzgg')
-			->orWhere('taxonomy', '=', 'bksjy-bksjx')
-			->orWhere('taxonomy', '=', 'yjsjy-yjsjx')
+			->orWhere('taxonomy', '=', 'xwzx-zxxw')
 			->orderBy('id', 'desc')->paginate(7);
 		$dynamics = Article::where('taxonomy', '=', 'xsjl-xsjz')
 			->orWhere('taxonomy', '=', 'xsjl-xshy')
