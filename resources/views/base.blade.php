@@ -51,7 +51,7 @@
                     <a href="/archive/1">本系概况</a>
                     <div class="pageBox1 disappear">
                             <a href="/archive/1">本系简介</a>
-                            <a href="/archive/2">现任领导</a>
+                            <a href="/archive/2">历任领导</a>
                             <a href="/archive/3">系属机构</a>
                             <a href="/archive/4">党政组织</a>
                     </div>
