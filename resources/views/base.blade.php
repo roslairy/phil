@@ -26,13 +26,12 @@
                
             </div>
              <div style="width: 340px;height: 100%;float: left;">
-                <img src="/img/makesi.png" style="width: 300px;height: 100%;margin-left:40px;">
                 </div>
             <div id="departmet">
-                <div id="pC">哲学系</div>
-                <div id="pE">Department of Philosophy</div>
+                <img id="pC" src="/img/zhexuexi.png"></img>
+                <img id="pE" src="/img/dop.png"></img>
                 <div id="EV">
-                    <a href="">ENGLISH</a>
+                    <a href="">English</a>
                 </div>
             </div>
         </div>
@@ -61,6 +60,7 @@
                     <a href="/teacherList/famous">师资队伍</a>
                         <div class="pageBox1 disappear">
                             <a href="/teacherList/famous">名家风采</a>
+                            <a href="/teacherList/retprof">荣休教授</a>
                             <a href="/teacherList/prof">教授</a>
                             <a href="/teacherList/asprof">副教授</a>
                             <a href="/teacherList/lecturer">讲师</a>

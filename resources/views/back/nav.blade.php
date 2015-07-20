@@ -34,6 +34,9 @@
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
+                    <a id="repass" href="repass"><i class="fa fa-wrench fa-fw"></i> 修改密码</a>
+                </li>
+                <li>
                     <a id="about" href="about"><i class="fa fa-info fa-fw"></i> 关于</a>
                 </li>
                 <li>

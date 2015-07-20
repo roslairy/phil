@@ -318,7 +318,5 @@ a{
 .detail_content{
     overflow-wrap: break-word;
     word-wrap: break-word;
-}
-.detail_content img{
-    max-width: 500px;
+    overflow: hidden;
 }
