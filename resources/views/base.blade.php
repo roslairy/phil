@@ -28,8 +28,8 @@
              <div style="width: 340px;height: 100%;float: left;">
                 </div>
             <div id="departmet">
-                <img id="pC" src="/img/zhexuexi.png"></img>
-                <img id="pE" src="/img/dop.png"></img>
+                <div id="pC">哲学系</div>
+                <div id="pE">Department of Philosophy</div>
                 <div id="EV">
                     <a href="">English</a>
                 </div>
