@@ -2,7 +2,6 @@
 namespace App;
 
 use App\Http\Controllers\Admin;
-use Illuminate\Support\Facades\Log;
 class View{
     
     public static function getAdminAboutView(){
@@ -37,10 +36,7 @@ class View{
         return view('back.login', [ 'err' => $err ]);
     }
     
-    public static function getBadRequstView($msg){
-    	if (!empty($msg)){
-    		Log::error($msg);
-    	}
+    public static function getBadRequstView(){
         return response('错误的输入，3秒后返回。' . 
                 '<script>setTimeout(function(){history.back()},3000)' . 
                 '</script>', 400);

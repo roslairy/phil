@@ -63,19 +63,15 @@ class Admin extends Controller {
             'id' => 'required|numeric'
         ]);
         
-        if ($v->fails()) {
-            return View::getBadRequstView($v->messages());
-        }
-        else if (Article::find(Input::get('id')) == null){
-        	return View::getBadRequstView(
-        			'no article of this id. id is '.Input::get('id'));
+        if ($v->fails() || Article::find(Input::get('id')) == null) {
+            return View::getBadRequstView();
         }
         
         $article = Article::find(Input::get('id'));
         $data = [
             'id' => $article->id,
             'title' => $article->title,
-            'author' => Autuser()->email,
+            'author' => $article->author,
             'taxonomy' => $article->taxonomy,
             'body' => $article->body,
             'picture' => $article->picture,
@@ -95,12 +91,9 @@ class Admin extends Controller {
             'picture' => 'image',
         ]);
         
-        if ($v->fails()) {
-            return View::getBadRequstView($v->messages());
-        }
-        else if (Article::find(Input::get('id')) == null){
-        	return View::getBadRequstView(
-        			'no article of this id. id is '.Input::get('id'));
+        if ($v->fails() || Article::find(Input::get('id')) == null) {
+            return $v->messages();
+            return View::getBadRequstView();
         }
 
         $article = Article::find(Input::get('id'));
@@ -130,12 +123,8 @@ class Admin extends Controller {
             'id' => 'required|numeric'
         ]);
         
-        if ($v->fails()) {
-            return View::getBadRequstView($v->messages());
-        }
-        else if (Article::find(Input::get('id')) == null){
-        	return View::getBadRequstView(
-        			'no article of this id. id is '.Input::get('id'));
+        if ($v->fails() || Article::find(Input::get('id')) == null) {
+            return View::getBadRequstView();
         }
         
         $article = Article::find(Input::get('id'));
@@ -170,12 +159,8 @@ class Admin extends Controller {
             'id' => 'required|numeric'
         ]);
         
-        if ($v->fails()) {
-            return View::getBadRequstView($v->messages());
-        }
-        else if (Teacher::find(Input::get('id')) == null){
-        	return View::getBadRequstView(
-        			'no teach of this id. id is '.Input::get('id'));
+        if ($v->fails() || Teacher::find(Input::get('id')) == null) {
+            return View::getBadRequstView();
         }
         
         $teacher = Teacher::find(Input::get('id'));
@@ -202,12 +187,8 @@ class Admin extends Controller {
             'description' => 'required',
         ]);
         
-        if ($v->fails()) {
-            return View::getBadRequstView($v->messages());
-        }
-        else if (Teacher::find(Input::get('id')) == null){
-        	return View::getBadRequstView(
-        			'no teach of this id. id is '.Input::get('id'));
+        if ($v->fails() || Teacher::find(Input::get('id')) == null) {
+            return View::getBadRequstView();
         }
         
         $teacher = Teacher::find(Input::get('id'));
@@ -235,34 +216,13 @@ class Admin extends Controller {
             'id' => 'required|numeric'
         ]);
         
-        if ($v->fails()) {
-            return View::getBadRequstView($v->messages());
-        }
-        else if (Teacher::find(Input::get('id')) == null){
-        	return View::getBadRequstView(
-        			'no teach of this id. id is '.Input::get('id'));
+        if ($v->fails() || Teacher::find(Input::get('id')) == null) {
+            return View::getBadRequstView();
         }
         
         Teacher::find(Input::get('id'))->delete();
         
         return redirect('/admin/teacher');
-    }
-
-    public function repass() {
-        $v = Validator::make(Input::all(), [
-            'pass' => 'required'
-        ]);
-        
-        if ($v->fails()) {
-            return view('back.repass');
-        }
-        
-        $pass = Input::get('pass');
-        
-        Auth::user()->password = Hash::make($pass);
-        Auth::user()->save();
-        
-        return redirect('/logout');
     }
 
     public function teacherNew() {
@@ -286,11 +246,10 @@ class Admin extends Controller {
     
     const TAXONOMY = [
         'bxgk-bxjj' => '本系概况-本系简介',
-        'bxgk-xrld' => '本系概况-历任领导',
+        'bxgk-xrld' => '本系概况-现任领导',
         'bxgk-xsjg' => '本系概况-系属机构',
         'bxgk-dzzz' => '本系概况-党政组织',
         'szdw-famous' => '师资队伍-名家风采',
-        'szdw-retprof' => '师资队伍-荣休教授',
         'szdw-prof' => '师资队伍-教授',
         'szdw-asprof' => '师资队伍-副教授',
         'szdw-lecturer' => '师资队伍-讲师',
@@ -317,12 +276,11 @@ class Admin extends Controller {
     const TRANS_TAXONOMY = [
 		'bxgk' => '本系概况',
 		'bxjj' => '本系简介',
-		'xrld' => '历任领导',
+		'xrld' => '现任领导',
 		'xsjg' => '系属机构',
 		'dzzz' => '党政组织',
     	'szdw' => '师资队伍',
         'famous' => '名家风采',
-        'retprof' => '荣休教授',
         'prof' => '教授',
         'asprof' => '副教授',
         'lecturer' => '讲师',
@@ -372,7 +330,6 @@ class Admin extends Controller {
     ];
     
     const TEACHER_TAXONOMY = [
-        'retprof' => '荣休教授',
     	'prof' => '教授',
     	'asprof' => '副教授',
     	'lecturer' => '讲师',

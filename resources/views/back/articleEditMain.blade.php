@@ -28,7 +28,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>作者</label>
-                                    <input class="form-control" placeholder="Enter text" name="author" value="{{ $data['author'] }}" readonly="true">
+                                    <input class="form-control" placeholder="Enter text" name="author" value="{{ $data['author'] }}" >
                                 </div>
                                 <div class="form-group" >
                                     <label>栏目</label>
