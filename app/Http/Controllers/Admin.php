@@ -75,7 +75,7 @@ class Admin extends Controller {
         $data = [
             'id' => $article->id,
             'title' => $article->title,
-            'author' => Autuser()->email,
+            'author' => Auth::user()->email,
             'taxonomy' => $article->taxonomy,
             'body' => $article->body,
             'picture' => $article->picture,
