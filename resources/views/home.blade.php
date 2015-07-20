@@ -4,7 +4,9 @@
 <div id="title"><a href=""><span>热点新闻 &gt; &gt;</span></a>
 </div>
 <div id="imgNews">
-    <div id="fame1" class="imgShow "><img src="img/kongzi.png"></div>
+    <div class="imgShow quote2" >
+    <p style="text-align: center">崇学 明道 立德 笃行
+    </p></div>
     <div class="imgShow  newsIntro1" 
     @if (!empty($presses->items()[0]->picture))
     style="background-image: url('{{ $presses[0]->picture }}')"
@@ -21,12 +23,12 @@
     @endif
     ><a href="/archive/{{ $presses[2]->id }}" class="sepa1" title="{{ $presses[2]->title }}">{{ $presses[2]->title }}</a></div>
     <div class="imgShow quote2" >
-    <p>我的野心是用十句话说出别人用一本书说出的东西，一一说出别人用一本书没有说出的东西。
-        <span style="float: right;">——尼采</span>
+    <p>为天地立心，为生民立命，为往圣继绝学，为万世开太平
+        <span style="float: right;">——张载</span>
     </p></div>
     <div class="imgShow quote1" >
-        <p>恭而无礼则劳，慎而无礼则葸，勇而无礼则乱，直而无礼则绞。
-        <span style="float: right;">——孔子</span>
+        <p>问，乃思之虔诚
+        <span style="float: right;">——海德格尔</span>
         </p>
     </div>
     <div class="imgShow newsIntro4"
@@ -44,7 +46,7 @@
     style="background-image: url('{{ $presses[5]->picture }}')"
     @endif
     ><a href="/archive/{{ $presses[5]->id }}" class="newsLink bg2" title="{{ $presses[5]->title }}">{{ $presses[5]->title }}</a></div>
-    <div class="imgShow"><img src="img/photo.png"></div>
+    <div class="imgShow"><img src="img/bolatu.jpg"></div>
 </div>
 <div id="manyLinks">
     <div class="links1">

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Article;
 use App\Http\Controllers\Admin;
+use Illuminate\Support\Facades\Hash;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -14,42 +15,48 @@ use App\Http\Controllers\Admin;
 |
 */
 
-Route::get('/fuck', function (){
-	$taxes = ['xwzx-zxxw', 'xwzx-tzgg', 'xsjl-xsjz', 'ssyd-ssly'];
-	for ($i = 0; $i < 10; $i++){
-		foreach ($taxes as $tax){
-			$article = new Article();
-			$article->title = str_random();
-			$article->author = str_random(8);
-			$article->taxonomy = $tax;
-			$article->body = str_random(100);
-			$article->picture = '';
-			$article->erasable = 1;
-			$article->pv = 0;
-			$article->save();
-		}
-	}
-});
-Route::get('/suck', function (){
-	$data = [];
-	foreach (Admin::TAXONOMY as $key => $value){
-		$keys = explode('-', $key);
-		$values = explode('-', $value);
-		$data[$keys[0]] = $values[0];
-		$data[$keys[1]] = $values[1];
-	}
-	echo "[\n";
-	foreach ($data as $key => $value){
-		echo "'".$key."' => '".$value."',\n";
-	}
-	echo ']';
-});
-Route::get('/update', function (){
-	Schema::table('teachers', function($table){
-	    $table->string('synopsis');
-	    $table->string('taxonomy');
-	    $table->integer('famous');
-	});
+// Route::get('/fuck', function (){
+// 	$taxes = ['xwzx-zxxw', 'xwzx-tzgg', 'xsjl-xsjz', 'ssyd-ssly'];
+// 	for ($i = 0; $i < 10; $i++){
+// 		foreach ($taxes as $tax){
+// 			$article = new Article();
+// 			$article->title = str_random();
+// 			$article->author = str_random(8);
+// 			$article->taxonomy = $tax;
+// 			$article->body = str_random(100);
+// 			$article->picture = '';
+// 			$article->erasable = 1;
+// 			$article->pv = 0;
+// 			$article->save();
+// 		}
+// 	}
+// });
+// Route::get('/suck', function (){
+// 	$data = [];
+// 	foreach (Admin::TAXONOMY as $key => $value){
+// 		$keys = explode('-', $key);
+// 		$values = explode('-', $value);
+// 		$data[$keys[0]] = $values[0];
+// 		$data[$keys[1]] = $values[1];
+// 	}
+// 	echo "[\n";
+// 	foreach ($data as $key => $value){
+// 		echo "'".$key."' => '".$value."',\n";
+// 	}
+// 	echo ']';
+// });
+// Route::get('/update', function (){
+// 	Schema::table('teachers', function($table){
+// 	    $table->string('synopsis');
+// 	    $table->string('taxonomy');
+// 	    $table->integer('famous');
+// 	});
+// });
+
+Route::get('/ttt', function (){
+	$str = 'super';
+	var_dump($str);
+	var_dump(Hash::make($str));
 });
 
 Route::get('/', 'Visit@index');
@@ -74,4 +81,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     Route::post('teacherSave', 'Admin@teacherSave');
     Route::get('teacherDelete', 'Admin@teacherDelete');
     Route::get('teacherNew', 'Admin@teacherNew');
+    Route::get('repass', 'Admin@repass');
 });
