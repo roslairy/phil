@@ -26,6 +26,7 @@
                
             </div>
              <div style="width: 340px;height: 100%;float: left;">
+             <img src="/img/makesi.png" style="width: 300px;height: 100%;margin-left:40px;">
                 </div>
             <div id="departmet">
                 <div id="pC">哲学系</div>
