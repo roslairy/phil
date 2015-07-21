@@ -4,7 +4,7 @@
 <div id="title"><a href=""><span>热点新闻 &gt; &gt;</span></a>
 </div>
 <div id="imgNews">
-    <div class="imgShow"><img src="img/bolatu.jpg"></div>
+    <div class="imgShow"><div style="background: url('img/bolatu.jpg'); background-size: cover;height: 192px;"></div></div>
     <div class="imgShow  newsIntro1" 
     @if (!empty($presses->items()[0]->picture))
     style="background-image: url('{{ $presses[0]->picture }}')"
