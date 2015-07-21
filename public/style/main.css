@@ -28,10 +28,11 @@
     height: 152px;
     margin: 20px auto;
     font-family: "方正姚体";
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     font-weight:700;
     line-height:28px;
+    box-sizing: border-box;
 }
 .quote2{
     background: #535353;
