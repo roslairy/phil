@@ -55,6 +55,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>新闻图片</label>
+                                    <span class="text-danger"> &nbsp; *如果是最新新闻请在此设置主页显示图片</span>
                                     <input id="fileinput" name="picture" type="file" class="file"/>
                                 </div>
                                 <button type="submit" class="btn btn-default">发表</button>
