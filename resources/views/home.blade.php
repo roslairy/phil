@@ -4,7 +4,7 @@
 <div id="title"><a href=""><span>热点新闻 &gt; &gt;</span></a>
 </div>
 <div id="imgNews">
-    <div class="imgShow"><div style="background: url('img/bolatu.jpg'); background-size: cover;height: 192px;"></div></div>
+    <div class="imgShow"><img src="/img/kong.png" alt=""></img></div>
     <div class="imgShow  newsIntro1" 
     @if (!empty($presses->items()[0]->picture))
     style="background-image: url('{{ $presses[0]->picture }}')"
@@ -20,7 +20,7 @@
     style="background-image: url('{{ $presses[2]->picture }}')"
     @endif
     ><a href="/archive/{{ $presses[2]->id }}" class="sepa1" title="{{ $presses[2]->title }}">{{ $presses[2]->title }}</a></div>
-    <div class="imgShow quote2" >
+    <div class="imgShow quote1" >
     <p style="margin-top:30px;">为天地立心，为生民立命，为往圣继绝学，为万世开太平。
         <span style="float: right;magin-left:20px;">——张载</span>
     </p>
