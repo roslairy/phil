@@ -47,7 +47,7 @@
     ><a href="/archive/{{ $presses[5]->id }}" class="newsLink bg2" title="{{ $presses[5]->title }}">{{ $presses[5]->title }}</a></div>
     
     <div class="imgShow quote2" >
-    <p style="text-align: center;line-height:152px;font-family:Comic Sans MS;">崇学 明道 立德 笃行
+    <p style="text-align: center;line-height:76px;font-family:Comic Sans MS;font-size:28px;">崇学 明道 立德 笃行
     </p></div>
 </div>
 <div id="manyLinks">
