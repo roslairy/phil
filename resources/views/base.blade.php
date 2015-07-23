@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>华中科技大学哲学系</title>
+    <title>华中科技大学哲学系
+    @if(!empty($pageTitle))
+    {{ ' | '.$pageTitle }}
+    @endif
+    </title>
     <meta name="description" content="DotWe presents">
     <meta name="author" content="DotWe">
     <link rel="stylesheet" href="/style/commen.css">

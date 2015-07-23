@@ -13,12 +13,12 @@
 	    <div class="location">您的位置：{{ $TRANS_TAXONOMY[$section] }} | {{ $TRANS_TAXONOMY[$sort] }}</div>
 
 		<div class="detail_content">
-		     <h3 style="text-align:center;padding-top:30px;">{{ $name }}</h3>
+		     <h3 style="text-align:center;padding-top:30px;padding-bottom:30px">{{ $name }}</h3>
 		    
 			<div class="teacher">
 			    <div style="width: 565px;">
-				<img src="{{ $picture }}" style="width: 100%; margin: 30px 0;" >
-				<p>
+				<img src="{{ $picture }}" style="width: 25%; margin: 10px 30px;float:left;" >
+				<p style="float:left;">
 					{!! $description !!}
 				</p>
 			</div>

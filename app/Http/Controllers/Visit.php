@@ -64,6 +64,7 @@ class Visit extends Controller {
 		$article->pv++;
 		$article->save();
 		
+		$data['pageTitle'] = $article->title;
 		$data['title'] = $article->title;
 		$data['author'] = $article->author;
 		$data['date'] = explode(' ', $article->created_at)[0];
@@ -96,6 +97,7 @@ class Visit extends Controller {
 		$data = [ 'section' => $section ];
 		$data = self::equipSort($data, $section, $sort);
 		
+		$data['pageTitle'] = $teacher->name;
 		$data['name'] = $teacher->name;
 		$data['description'] = $teacher->description;
 		$data['picture'] = $teacher->picture;
