@@ -17,8 +17,10 @@
 		    
 			<div class="teacher">
 			    <div style="width: 565px;">
-				<img src="{{ $picture }}" style="width: 25%; margin: 10px 30px;float:left;" >
-				<p style="float:left;">
+			    <div style="width: 25%; margin: 10px auto" >
+				<img src="{{ $picture }}" style="width: 100%;" >
+			    </div>
+				<p style="">
 					{!! $description !!}
 				</p>
 			</div>
