@@ -324,3 +324,7 @@ a{
     color: blue;
     text-decoration: underline;
 }
+.detail_content p {
+    margin: 10px 0;
+    line-height: 15px;
+}
