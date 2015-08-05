@@ -54,7 +54,7 @@
                                     <label>正文</label>
                                     <!-- 加载编辑器的容器 -->
                                     <script id="ue-container" name="body" type="text/plain">
-                                        这里写你的初始化内容
+                                        {!! $data['body'] !!}
                                     </script>
                                 </div>
                                 <div class="form-group">
@@ -76,7 +76,7 @@
                             var ue = UE.getEditor('ue-container');
                             ue.ready(function() {
                                 //设置编辑器的内容
-                                ue.setContent('{!! $data['body'] !!}');
+                                //ue.setContent('');
                                 ue.setHeight(300);
                             });
                         </script>

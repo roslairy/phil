@@ -53,10 +53,11 @@ use Illuminate\Support\Facades\Hash;
 // 	});
 // });
 
-Route::get('/ttt', function (){
-	$str = 'super';
-	var_dump($str);
-	var_dump(Hash::make($str));
+Route::get('/fixErasable', function (){
+	foreach (Article::all() as $article){
+		if ($article->id > 4) $article->erasable = 1;
+	}
+	return 'good';
 });
 
 Route::get('/', 'Visit@index');
