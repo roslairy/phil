@@ -30,6 +30,10 @@
                                     <label>作者</label>
                                     <input class="form-control" placeholder="Enter text" name="author" value="{{ $data['author'] }}" readonly="true">
                                 </div>
+                                <div class="form-group">
+                                    <label>发布时间</label>
+                                    <input class="form-control" id="time" name="time" type="text" value="{{ $data['time'] }}" />
+                                </div>
                                 <div class="form-group" >
                                     <label>栏目</label>
                                     <select class="form-control" name="taxonomy" 

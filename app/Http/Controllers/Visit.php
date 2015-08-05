@@ -19,15 +19,15 @@ class Visit extends Controller {
 		$data = [ 'section' => 'sy' ];
 		
 		$presses = Article::where('taxonomy', '=', 'xwzx-zxxw')
-			->orderBy('id', 'desc')->paginate(6);
+			->orderBy('created_at', 'desc')->paginate(6);
 		$informs = Article::where('taxonomy', '=', 'xwzx-tzgg')
 			->orWhere('taxonomy', '=', 'xwzx-zxxw')
-			->orderBy('id', 'desc')->paginate(7);
+			->orderBy('created_at', 'desc')->paginate(7);
 		$dynamics = Article::where('taxonomy', '=', 'xsjl-xsjz')
 			->orWhere('taxonomy', '=', 'xsjl-xshy')
-			->orderBy('id', 'desc')->paginate(7);
+			->orderBy('created_at', 'desc')->paginate(7);
 		$teachers = Article::where('taxonomy', '=', 'ssyd-ssly')
-			->orderBy('id', 'desc')->paginate(7);
+			->orderBy('created_at', 'desc')->paginate(7);
 		
 		$data['presses'] = $presses;
 		$data['informs'] = $informs;
@@ -41,7 +41,7 @@ class Visit extends Controller {
 		$data = [ 'section' => $section ];
 		
 		$lists = Article::where('taxonomy', '=', $section.'-'.$sort)
-			->orderBy('id', 'desc')->paginate(10);
+			->orderBy('created_at', 'desc')->paginate(10);
 		
 		foreach($lists as $item){
 			$item->date = explode(' ', $item->created_at)[0];

@@ -79,7 +79,8 @@ class Admin extends Controller {
             'taxonomy' => $article->taxonomy,
             'body' => $article->body,
             'picture' => $article->picture,
-            'erasable' => $article->erasable
+            'erasable' => $article->erasable,
+        	'time' => $article->created_at
         ];
         
         return View::getAdminArticleEditView($data);
@@ -93,6 +94,7 @@ class Admin extends Controller {
             'taxonomy' => 'required',
             'body' => 'required',
             'picture' => 'image',
+        	'time' => 'required|date'
         ]);
         
         if ($v->fails()) {
@@ -108,6 +110,7 @@ class Admin extends Controller {
         $article->author = Input::get('author');
         $article->taxonomy = Input::get('taxonomy');
         $article->body = Input::get('body');
+        $article->created_at = Input::get('time');
         
         if (Req::hasFile('picture')){
             $filename = $this->getRandFilename();
