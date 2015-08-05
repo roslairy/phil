@@ -320,3 +320,7 @@ a{
     word-wrap: break-word;
     overflow: hidden;
 }
+.detail_content a {
+    color: blue;
+    text-decoration: underline;
+}
