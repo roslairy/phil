@@ -53,10 +53,28 @@ use Illuminate\Support\Facades\Hash;
 // 	});
 // });
 
-Route::get('/ttt', function (){
-	$str = 'super';
-	var_dump($str);
-	var_dump(Hash::make($str));
+Route::post('/dump', function (){
+		$v = Validator::make(Input::all(), [
+				'title' => 'required',
+				'body' => 'required',
+				'time' => 'required|date'
+		]);
+	
+		if ($v->fails()) {
+			return response('bad request', 400);
+		}
+	
+		$article = new Article();
+		$article->setTable('articles');
+		$article->title = Input::get('title');
+		$article->author = 'admin';
+		$article->taxonomy = 'bksjy-bkszs';
+		$article->body = Input::get('body');
+		$article->created_at = Input::get('time');
+	
+		$article->save();
+	
+		return response('good');
 });
 
 Route::get('/', 'Visit@index');
