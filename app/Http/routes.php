@@ -55,7 +55,10 @@ use Illuminate\Support\Facades\Hash;
 
 Route::get('/fixErasable', function (){
 	foreach (Article::all() as $article){
-		if ($article->id > 4) $article->erasable = 1;
+		if ($article->id > 4) {
+			$article->erasable = 1;
+			$article->save();
+		}
 	}
 	return 'good';
 });
