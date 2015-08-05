@@ -15,7 +15,7 @@
 		    <ul>
 		    	@foreach($teachers as $teacher)
 		        <li>
-		            <div class="li_div"><a href=""><img src="{{$teacher->picture}}"></a></div>
+		            <div class="li_div"><a href="/teacher/{{$teacher->id}}"><img src="{{$teacher->picture}}"></a></div>
 		            <div class="teacher_info">
 		                <h4>{{$teacher->name}}</h4>
 		                <p>
