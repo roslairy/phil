@@ -26,5 +26,6 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('inspire')
                  ->hourly();
+        $schedule->exec('env GIT_SSL_NO_VERIFY=true git pull')->everyFiveMinutes();
     }
 }
