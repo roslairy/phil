@@ -255,13 +255,16 @@ a{
     height: 158px;
     float: left;
     text-align: center;
+    background-color: #EEEEEE;
 }
 .teacher_info p{
     width: 130px;
-    height: 120px;
+    height: 110px;
     margin: 0 auto;
     overflow: hidden;
-    line-height: 28px;
+    text-align: left;
+    text-indent: 28px;
+    margin-top: 10px;
 }
 .teacher_fenye{
     clear: both;
