@@ -38,6 +38,10 @@ class Visit extends Controller {
 	}
 	
 	public function showArticleList($section, $sort){
+		if(!array_key_exists($section.'-'.$sort, Admin::TAXONOMY)){
+			abort(404);
+		}
+		
 		$data = [ 'section' => $section ];
 		
 		$lists = Article::where('taxonomy', '=', $section.'-'.$sort)
@@ -56,6 +60,11 @@ class Visit extends Controller {
 	
 	public function showArticle($id){
 		$article = Article::find($id);
+
+        if (empty($article)){
+            abort(404);
+        }
+
 		list($section, $sort) = explode('-', $article->taxonomy);
 		
 		$data = [ 'section' => $section ];
@@ -76,6 +85,10 @@ class Visit extends Controller {
 	}
 	
 	public function showTeacherList($taxonomy){
+		if(!array_key_exists($taxonomy, Admin::TEACHER_TAXONOMY)){
+			abort(404);
+		}
+		
 		$data = [ 'section' => 'szdw' ];
 		
 		$lists = Teacher::where('taxonomy', '=', $taxonomy)->paginate(6);
@@ -91,6 +104,11 @@ class Visit extends Controller {
 	
 	public function showTeacher($id){
 		$teacher = Teacher::find($id);
+
+        if (empty($teacher)){
+            abort(404);
+        }
+        
 		$section = 'szdw';
 		$sort = $teacher->taxonomy;
 		

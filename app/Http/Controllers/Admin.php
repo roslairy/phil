@@ -375,6 +375,7 @@ class Admin extends Controller {
     ];
     
     const TEACHER_TAXONOMY = [
+    	'famous' => '名家风采',
         'retprof' => '荣休教授',
     	'prof' => '教授',
     	'asprof' => '副教授',
