@@ -31,7 +31,7 @@
                                 <tr class="gradeX">
                                     <td>{{ $line['created_at'] }}</td>
                                     <td>{{ $line['title'] }}</td>
-                                    <td>{{ $TAXONOMY[$line['taxonomy']] }}</td>
+                                    <td class="click-tax" style="cursor: pointer;">{{ $TAXONOMY[$line['taxonomy']] }}</td>
                                     <td>{{ $line['author'] }}</td>
                                     <td>{{ $line['pv'] }}</td>
                                     <td>

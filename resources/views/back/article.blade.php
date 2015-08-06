@@ -8,5 +8,8 @@
     @include('back.tableJs')
     <script type="text/javascript" charset="utf-8">
         $('a#article').addClass('active');
+        $('.click-tax').click(function(){
+        	window.table.search($(this).text()).draw();
+        })
     </script>
 @stop

@@ -19,7 +19,7 @@
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
     $(document).ready(function() {
-        $('#dataTables').DataTable({
+        window.table = $('#dataTables').DataTable({
                 responsive: true
         });
     });
