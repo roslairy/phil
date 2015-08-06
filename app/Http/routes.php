@@ -62,9 +62,9 @@ use Illuminate\Support\Facades\Hash;
 // 	}
 // 	return 'good';
 // });
-Route::get('/tgood', function(){
-    return 'good';
-});
+// Route::get('/tgood', function(){
+//     return 'good';
+// });
 
 Route::get('/', 'Visit@index');
 Route::get('/archive/{id}', 'Visit@showArticle');
