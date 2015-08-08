@@ -7,6 +7,9 @@ body{
 	margin:0px;
     font-family: "microsoft yahei",sans-serif;
 }
+.menuBox a:hover{
+	color: #7e2d2d;
+}
 a{
     display: block;
     color: inherit;
@@ -99,6 +102,7 @@ a{
 
 .pageBox1 a:hover,.pageBox2 a:hover{
     background-color:  #E34D4D;
+    color: white;
 }
 /*头部*/
 #banner{
@@ -180,7 +184,7 @@ a{
     height: 390px;
     float: left;
     margin-left: 50px;
-    background: #EEEEEE;
+    background: #f9f8f8;
 }
 .subNav h2{
     height: 35px;
@@ -190,7 +194,9 @@ a{
     margin-bottom: 20px;
     margin-left: 42px;
     font-weight:540;
-    border-bottom: 2px solid #535353;
+    border-bottom: 2px solid rgba(83, 83, 83, 0.69);
+    font-size: 1.2em;
+    color: #7e2d2d;
 }
 .menuBox li{
    font-size: 16px;
@@ -217,6 +223,7 @@ a{
     text-align: center;
     margin-top: 18px;
     margin-bottom: 20px;
+    color: #999;
 }
 .detail_content{
     margin-bottom:30px;
@@ -252,25 +259,29 @@ a{
 }
 .teacher_info{
     width: 136px;
-    height: 158px;
+    height: 142px;
     float: left;
     text-align: center;
-    background-color: #EEEEEE;
+    background-color: #f9f8f8;
+    padding-top: 16px;
 }
 .teacher_info p{
-    width: 130px;
-    height: 110px;
+    width: 120px;
+    height: 78px;
     margin: 0 auto;
     overflow: hidden;
     text-align: left;
     text-indent: 28px;
     margin-top: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
 }
 .teacher_fenye{
     clear: both;
     padding-top: 20px;
     display: block;
     text-align: center;
+    margin-top: 40px;
 }
 .teacher_fenye *{
     display: inline;
@@ -285,10 +296,11 @@ a{
 }
 .newsli{
     overflow: hidden;
+    margin-top: 22px;
 }
 .newsli li{
    
-    margin-top: 5px;
+    margin-top: 15px;
     list-style: none;
     overflow: hidden;
 }
@@ -313,7 +325,7 @@ a{
     background: #000;
     border: 4px;
     border-style: solid;
-    margin-right: 5px;
+    margin-right: 20px;
     margin-top: 6px;
     border-color: #fff #fff #fff #535353;
     vertical-align: middle;

@@ -18,6 +18,15 @@
     height: 192px;
     border: 0;
 }
+.imgText{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin: 70px 25px;
+    width: 142px;
+    height: 112px;
+    text-indent: 2em;
+}
+
 .quote1{
     background: #E34D4D;
     
@@ -135,10 +144,7 @@
     height: 192px;
     position: absolute;
     z-index: 99;
-    text-align: center;
-    line-height: 192px;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow:ellipsis;
     color: white;
     font-family: '微软雅黑';
@@ -169,10 +175,7 @@
     height: 192px;
     position: absolute;
     z-index: 99;
-    text-align: center;
-    line-height: 192px;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow:ellipsis;
     color: white;
     font-family: '微软雅黑';
@@ -186,10 +189,7 @@
     height: 192px;
     position: absolute;
     z-index: 99;
-    text-align: center;
-    line-height: 192px;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow:ellipsis;
     color: white;
     font-family: '微软雅黑';
