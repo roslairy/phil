@@ -29,7 +29,7 @@
                             <tbody>
                                 @foreach($data as $line)
                                 <tr class="gradeX">
-                                    <td>{{ $line['created_at'] }}</td>
+                                    <td class="data-created-at">{{ explode(' ', $line['created_at'])[0] }}</td>
                                     <td>{{ $line['title'] }}</td>
                                     <td class="click-tax" style="cursor: pointer;">{{ $TAXONOMY[$line['taxonomy']] }}</td>
                                     <td>{{ $line['author'] }}</td>

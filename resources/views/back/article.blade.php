@@ -10,6 +10,6 @@
         $('a#article').addClass('active');
         $('.click-tax').click(function(){
         	window.table.search($(this).text()).draw();
-        })
+        });
     </script>
 @stop
