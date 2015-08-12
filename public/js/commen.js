@@ -22,3 +22,9 @@ function bannerChange(){
         
     });
 }
+
+$(function(){
+    $(".teacher_info p").each(function(i){
+        $clamp(this, {clamp: 4});
+    });
+});

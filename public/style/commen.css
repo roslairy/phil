@@ -267,14 +267,17 @@ a{
 }
 .teacher_info p{
     width: 120px;
-    height: 78px;
+    height: 65px;
     margin: 0 auto;
     overflow: hidden;
     text-align: left;
     text-indent: 28px;
     margin-top: 10px;
+    margin-bottom: 13px;
     text-align: center;
     text-overflow: ellipsis;
+    font-size: 0.9em;
+    color: #5d5d5d;
 }
 .teacher_fenye{
     clear: both;
@@ -333,9 +336,9 @@ a{
 .detail_content{
     overflow-wrap: break-word;
     word-wrap: break-word;
-    overflow: hidden;
 }
 .detail_content a {
+	display: inline;
     color: blue;
     text-decoration: underline;
 }

@@ -136,6 +136,7 @@
         <p>华中科技大学东五楼425室，邮编：430074，电话号码：87541842</p>
     </div>
     <script src="/jquery-2.1.3.min.js"></script>
+    <script src="/js/clamp.min.js"></script>
     <script src="/js/commen.js"></script>
     <script type="text/javascript" charset="utf-8">
     	$('#{{$section}}').addClass('atHereColor');
