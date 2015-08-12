@@ -267,7 +267,8 @@ a{
 }
 .teacher_info p{
     width: 120px;
-    height: 65px;
+    height: 4.8em;
+    line-height: 1.2em;
     margin: 0 auto;
     overflow: hidden;
     text-align: left;
