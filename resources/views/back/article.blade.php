@@ -11,5 +11,8 @@
         $('.click-tax').click(function(){
         	window.table.search($(this).text()).draw();
         });
+        $(function(){
+    		window.table.page.len(100).draw();
+        });
     </script>
 @stop
