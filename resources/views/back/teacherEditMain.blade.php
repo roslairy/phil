@@ -54,7 +54,7 @@
                                     <label>正文</label>
                                     <!-- 加载编辑器的容器 -->
                                     <script id="ue-container" name="description" type="text/plain">
-                                        这里写你的初始化内容
+                                        $data['description']
                                     </script>
                                 </div>
                                 <button type="submit" class="btn btn-default">发表</button>
@@ -70,8 +70,6 @@
                         <script type="text/javascript">
                             var ue = UE.getEditor('ue-container');
                             ue.ready(function() {
-                                //设置编辑器的内容
-                                ue.setContent('{!! $data['description'] !!}');
                                 ue.setHeight(300);
                             });
                         </script>

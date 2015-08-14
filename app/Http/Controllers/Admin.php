@@ -119,9 +119,6 @@ class Admin extends Controller {
             Req::file('picture')
             ->move(storage_path().'/../public/uploadimg', $filename);
         }
-        else {
-            $article->picture = '';
-        }
             
         $article->save();
         
