@@ -54,7 +54,7 @@
                                     <label>正文</label>
                                     <!-- 加载编辑器的容器 -->
                                     <script id="ue-container" name="description" type="text/plain">
-                                        {! $data['description'] !}
+                                        {!! $data['description'] !!}
                                     </script>
                                 </div>
                                 <button type="submit" class="btn btn-default">发表</button>
