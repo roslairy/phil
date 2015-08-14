@@ -182,9 +182,7 @@
 }
 .sepa2 {
     
-     background:#E34D4D;
-    opacity: 0.8;
-    filter:alpha(opacity=0.8);
+     background:rgba(227, 77, 77, 0.8);
     width: 192px;
     height: 192px;
     position: absolute;
