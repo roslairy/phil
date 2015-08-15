@@ -19,15 +19,39 @@ class Visit extends Controller {
 		$data = [ 'section' => 'sy' ];
 		
 		$presses = Article::where('taxonomy', '=', 'xwzx-zxxw')
+            ->where('picture', '<>', '')
 			->orderBy('created_at', 'desc')->paginate(6);
 		$informs = Article::where('taxonomy', '=', 'xwzx-tzgg')
 			->orWhere('taxonomy', '=', 'xwzx-zxxw')
 			->orderBy('created_at', 'desc')->paginate(7);
+        // $informs = Article::whereRaw('(len(picture) <> 0 and (taxonomy = \'xwzx-tzgg\' or taxonomy = \'xwzx-zxxw\'))')
+        //     ->orderBy('created_at', 'desc')->paginate(7);
 		$dynamics = Article::where('taxonomy', '=', 'xsjl-xsjz')
 			->orWhere('taxonomy', '=', 'xsjl-xshy')
 			->orderBy('created_at', 'desc')->paginate(7);
 		$teachers = Article::where('taxonomy', '=', 'ssyd-ssly')
 			->orderBy('created_at', 'desc')->paginate(7);
+
+        // $newInforms = [];
+        // for ($i = 0; count($newInforms) < 6; $i++) {
+        //     if ($i >= count($informs)){
+        //         $article = new Article();
+        //         $article->title = '图片新闻不足六条';
+        //         $article->author = '作者未填写';
+        //         $article->taxonomy = 'bksjy-bkszs';
+        //         $article->body = '文章未填写';
+        //         $article->picture = '';
+        //         $article->erasable = 1;
+        //         $newInforms[] = $article;
+        //     }
+        //     else {
+        //         $inform = $informs[$i];
+        //         if (!empty($informs[$i]->picture)){
+        //             var_dump($informs[$i]->id);
+        //             $newInforms[] = $informs[$i];
+        //         }
+        //     }
+        // }
 		
 		$data['presses'] = $presses;
 		$data['informs'] = $informs;
