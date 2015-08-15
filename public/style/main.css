@@ -195,3 +195,8 @@
 .imgShow{
     background-size: cover;
 }
+.quote1 p, .quote1 span, .quote2 p, .quote2 span{
+	font-weight: normal;
+    font-family: "KaiTi", "STKaiTi";
+    font-size: 1.2em;
+}
