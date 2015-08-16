@@ -276,6 +276,7 @@ a{
     text-overflow: ellipsis;
     font-size: 0.9em;
     color: #5d5d5d;
+    text-align: left;
 }
 .teacher_fenye{
     clear: both;
