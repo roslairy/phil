@@ -2,6 +2,7 @@
 <html lang="zh">
 
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta charset="UTF-8">
     <title>华中科技大学 - 哲学系
