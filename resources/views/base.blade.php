@@ -2,6 +2,7 @@
 <html lang="zh">
 
 <head>
+    <meta name="renderer" content="webkit">
     <meta charset="UTF-8">
     <title>华中科技大学 - 哲学系
     @if(!empty($pageTitle))
@@ -11,7 +12,6 @@
     <meta name="Description" content="华中科技大学哲学系自1996年成立以来本着“入主流，重交叉，创特色”的指导思想，以倡主流、创交叉、重国际合作，走小而精的发展道路为特色，是国内哲学界“最年轻、最具活力的”哲学系之一。">
     <meta name="Keywords" content="华科, 哲学系, 华中科技大学">
     <meta name="Author" content="DotWe">
-    <meta name="renderer" content="webkit|ie-stand">
     <link rel="stylesheet" href="/style/commen.css">
     <link rel="stylesheet" href="/style/main.css">
 </head>
