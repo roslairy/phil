@@ -53,41 +53,41 @@ use Illuminate\Support\Facades\Hash;
 // 	});
 // });
 
-Route::get('/fixErasable', function (){
-	foreach (Article::all() as $article){
-		if ($article->id > 4) {
-			$article->erasable = 1;
-			$article->save();
-		}
-	}
-	return 'good';
-});
+// Route::get('/fixErasable', function (){
+// 	foreach (Article::all() as $article){
+// 		if ($article->id > 4) {
+// 			$article->erasable = 1;
+// 			$article->save();
+// 		}
+// 	}
+// 	return 'good';
+// });
 // Route::get('/tgood', function(){
 //     return 'good';
 // });
-Route::post('/dump', function (){
-		$v = Validator::make(Input::all(), [
-				'title' => 'required',
-				'body' => 'required',
-				'time' => 'required|date'
-		]);
+// Route::post('/dump', function (){
+// 		$v = Validator::make(Input::all(), [
+// 				'title' => 'required',
+// 				'body' => 'required',
+// 				'time' => 'required|date'
+// 		]);
 	
-		if ($v->fails()) {
-			return response('bad request', 400);
-		}
+// 		if ($v->fails()) {
+// 			return response('bad request', 400);
+// 		}
 	
-		$article = new Article();
-		$article->setTable('articles');
-		$article->title = Input::get('title');
-		$article->author = 'admin';
-		$article->taxonomy = 'bksjy-bkszs';
-		$article->body = Input::get('body');
-		$article->created_at = Input::get('time');
+// 		$article = new Article();
+// 		$article->setTable('articles');
+// 		$article->title = Input::get('title');
+// 		$article->author = 'admin';
+// 		$article->taxonomy = 'bksjy-bkszs';
+// 		$article->body = Input::get('body');
+// 		$article->created_at = Input::get('time');
 	
-		$article->save();
+// 		$article->save();
 	
-		return response('good');
-});
+// 		return response('good');
+// });
 
 Route::get('/', 'Visit@index');
 Route::get('/archive/{id}', 'Visit@showArticle');
